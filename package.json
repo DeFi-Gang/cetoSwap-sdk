@@ -1,5 +1,5 @@
 {
-  "name": "sparkswap-sdk",
+  "name": "cetoswap-sdk",
   "license": "MIT",
   "version": "2.1.1",
   "description": "🛠 An SDK for building applications on top of SparkSwap",
@@ -8,14 +8,14 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/sparkswapdao/sparkswap-sdk.git",
+  "repository": "https://github.com/DeFi-Gang/cetoSwap-sdk",
   "keywords": [
     "sparkswap",
     "spark",
     "pulsex",
     "pulsechain"
   ],
-  "module": "dist/sparkswap-sdk.esm.js",
+  "module": "dist/cetoswap-sdk.esm.js",
   "scripts": {
     "lint": "tsdx lint src test",
     "build": "tsdx build",

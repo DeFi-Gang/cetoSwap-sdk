@@ -166,16 +166,16 @@ function _toPropertyKey(arg) {
   return typeof key === "symbol" ? key : String(key);
 }
 
-var FACTORY_ADDRESS = '0x955219a87eb0c6754fd247266af970f7d16906cd';
+var FACTORY_ADDRESS = '0x6Af0c089b809a0E08cf84c6538A46C17dF234Ab3';
 var WETH = {
-  369: /*#__PURE__*/new sdkCore.Token(369, '0xa1077a294dde1b09bb078844df40758a5d0f9a27', 18, 'WPLS', 'Wrapped Pulse')
+  169: /*#__PURE__*/new sdkCore.Token(169, '0x0dc808adce2099a9f62aa87d9670745aba741746', 18, 'WETH', 'Wrapped Ether')
 };
-var ETHER = /*#__PURE__*/_extends({}, /*#__PURE__*/sdkCore.Pulse.onChain(369), {
-  wrapped: WETH[369],
-  chainId: 369,
-  equals: /*#__PURE__*/sdkCore.Pulse.onChain(369).equals
+var ETHER = /*#__PURE__*/_extends({}, /*#__PURE__*/sdkCore.Pulse.onChain(169), {
+  wrapped: WETH[169],
+  chainId: 169,
+  equals: /*#__PURE__*/sdkCore.Pulse.onChain(169).equals
 });
-var INIT_CODE_HASH = '0xd98d5db929ea0eea7a1e5d6b95fe5a6bca2f96da961c8c025a31487e3354fd80';
+var INIT_CODE_HASH = '0xd5cfea86bf2f2528b04497e00097a7bcc640c87036f616739ceace2e35e88200';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000);
 // exports for internal consumption
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -826,4 +826,4 @@ exports.WETH = WETH;
 exports.computePairAddress = computePairAddress;
 exports.inputOutputComparator = inputOutputComparator;
 exports.tradeComparator = tradeComparator;
-//# sourceMappingURL=sparkswap-sdk.cjs.development.js.map
+//# sourceMappingURL=cetoswap-sdk.cjs.development.js.map

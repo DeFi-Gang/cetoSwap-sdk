@@ -6,10 +6,10 @@ import JSBI from 'jsbi'
 import { CurrencyAmount, Percent, Token, TradeType, Price } from '@pulsex/sdk-core'
 
 describe('Trade', () => {
-  const token0 = new Token(369, '0x0000000000000000000000000000000000000001', 18, 't0')
-  const token1 = new Token(369, '0x0000000000000000000000000000000000000002', 18, 't1')
-  const token2 = new Token(369, '0x0000000000000000000000000000000000000003', 18, 't2')
-  const token3 = new Token(369, '0x0000000000000000000000000000000000000004', 18, 't3')
+  const token0 = new Token(169, '0x0000000000000000000000000000000000000001', 18, 't0')
+  const token1 = new Token(169, '0x0000000000000000000000000000000000000002', 18, 't1')
+  const token2 = new Token(169, '0x0000000000000000000000000000000000000003', 18, 't2')
+  const token3 = new Token(169, '0x0000000000000000000000000000000000000004', 18, 't3')
 
   const pair_0_1 = new Pair(
     CurrencyAmount.fromRawAmount(token0, JSBI.BigInt(1000)),
@@ -33,7 +33,7 @@ describe('Trade', () => {
   )
 
   const pair_weth_0 = new Pair(
-    CurrencyAmount.fromRawAmount(WETH[369], JSBI.BigInt(1000)),
+    CurrencyAmount.fromRawAmount(WETH[169], JSBI.BigInt(1000)),
     CurrencyAmount.fromRawAmount(token0, JSBI.BigInt(1000))
   )
 
@@ -169,10 +169,10 @@ describe('Trade', () => {
       )
       expect(result).toHaveLength(2)
       expect(result[0].inputAmount.currency).toEqual(ETHER)
-      expect(result[0].route.path).toEqual([WETH[369], token0, token1, token3])
+      expect(result[0].route.path).toEqual([WETH[169], token0, token1, token3])
       expect(result[0].outputAmount.currency).toEqual(token3)
       expect(result[1].inputAmount.currency).toEqual(ETHER)
-      expect(result[1].route.path).toEqual([WETH[369], token0, token3])
+      expect(result[1].route.path).toEqual([WETH[169], token0, token3])
       expect(result[1].outputAmount.currency).toEqual(token3)
     })
     it('works for ETHER currency output', () => {
@@ -183,10 +183,10 @@ describe('Trade', () => {
       )
       expect(result).toHaveLength(2)
       expect(result[0].inputAmount.currency).toEqual(token3)
-      expect(result[0].route.path).toEqual([token3, token0, WETH[369]])
+      expect(result[0].route.path).toEqual([token3, token0, WETH[169]])
       expect(result[0].outputAmount.currency).toEqual(ETHER)
       expect(result[1].inputAmount.currency).toEqual(token3)
-      expect(result[1].route.path).toEqual([token3, token1, token0, WETH[369]])
+      expect(result[1].route.path).toEqual([token3, token1, token0, WETH[169]])
       expect(result[1].outputAmount.currency).toEqual(ETHER)
     })
   })
@@ -438,10 +438,10 @@ describe('Trade', () => {
       )
       expect(result).toHaveLength(2)
       expect(result[0].inputAmount.currency).toEqual(ETHER)
-      expect(result[0].route.path).toEqual([WETH[369], token0, token1, token3])
+      expect(result[0].route.path).toEqual([WETH[169], token0, token1, token3])
       expect(result[0].outputAmount.currency).toEqual(token3)
       expect(result[1].inputAmount.currency).toEqual(ETHER)
-      expect(result[1].route.path).toEqual([WETH[369], token0, token3])
+      expect(result[1].route.path).toEqual([WETH[169], token0, token3])
       expect(result[1].outputAmount.currency).toEqual(token3)
     })
     it('works for ETHER currency output', () => {
@@ -452,10 +452,10 @@ describe('Trade', () => {
       )
       expect(result).toHaveLength(2)
       expect(result[0].inputAmount.currency).toEqual(token3)
-      expect(result[0].route.path).toEqual([token3, token0, WETH[369]])
+      expect(result[0].route.path).toEqual([token3, token0, WETH[169]])
       expect(result[0].outputAmount.currency).toEqual(ETHER)
       expect(result[1].inputAmount.currency).toEqual(token3)
-      expect(result[1].route.path).toEqual([token3, token1, token0, WETH[369]])
+      expect(result[1].route.path).toEqual([token3, token1, token0, WETH[169]])
       expect(result[1].outputAmount.currency).toEqual(ETHER)
     })
   })
