@@ -167,6 +167,8 @@ var WETH = {
   169: /*#__PURE__*/new Token(169, '0x0dc808adce2099a9f62aa87d9670745aba741746', 18, 'WETH', 'Wrapped Ether')
 };
 var ETHER = /*#__PURE__*/_extends({}, /*#__PURE__*/Pulse.onChain(169), {
+  name: 'ETH',
+  symbol: 'ETH',
   wrapped: WETH[169],
   chainId: 169,
   equals: /*#__PURE__*/Pulse.onChain(169).equals
