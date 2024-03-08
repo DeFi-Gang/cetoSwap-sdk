@@ -1,13 +1,13 @@
 import { Pulse, Token } from '@pulsex/sdk-core'
 import JSBI from 'jsbi'
 
-export const FACTORY_ADDRESS = '0x6Af0c089b809a0E08cf84c6538A46C17dF234Ab3'
+export const FACTORY_ADDRESS = '0xF50c8E257CCF3e2b58651F78e3C2dc83446d9c47'
 
 export const WETH = { 169: new Token(169, '0x0dc808adce2099a9f62aa87d9670745aba741746', 18, 'WETH', 'Wrapped Ether') }
 
 export const ETHER = { ...Pulse.onChain(169), name: 'ETH', symbol: 'ETH',  wrapped: WETH[169], chainId: 169, equals: Pulse.onChain(169).equals } as Pulse
 
-export const INIT_CODE_HASH = '0xd5cfea86bf2f2528b04497e00097a7bcc640c87036f616739ceace2e35e88200'
+export const INIT_CODE_HASH = '0x4dd353593ba534bb8eb200b27a52ba6235fbc6cd20d766576a0a43e81cfc187e'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 

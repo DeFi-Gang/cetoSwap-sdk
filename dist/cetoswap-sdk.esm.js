@@ -162,7 +162,7 @@ function _toPropertyKey(arg) {
   return typeof key === "symbol" ? key : String(key);
 }
 
-var FACTORY_ADDRESS = '0x6Af0c089b809a0E08cf84c6538A46C17dF234Ab3';
+var FACTORY_ADDRESS = '0xF50c8E257CCF3e2b58651F78e3C2dc83446d9c47';
 var WETH = {
   169: /*#__PURE__*/new Token(169, '0x0dc808adce2099a9f62aa87d9670745aba741746', 18, 'WETH', 'Wrapped Ether')
 };
@@ -173,7 +173,7 @@ var ETHER = /*#__PURE__*/_extends({}, /*#__PURE__*/Pulse.onChain(169), {
   chainId: 169,
   equals: /*#__PURE__*/Pulse.onChain(169).equals
 });
-var INIT_CODE_HASH = '0xd5cfea86bf2f2528b04497e00097a7bcc640c87036f616739ceace2e35e88200';
+var INIT_CODE_HASH = '0x4dd353593ba534bb8eb200b27a52ba6235fbc6cd20d766576a0a43e81cfc187e';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000);
 // exports for internal consumption
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
