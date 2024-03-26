@@ -233,7 +233,7 @@ var Pair = /*#__PURE__*/function () {
   function Pair(currencyAmountA, tokenAmountB, swapFee, protocolFeeShare) {
     var tokenAmounts = currencyAmountA.currency.sortsBefore(tokenAmountB.currency) // does safety checks
     ? [currencyAmountA, tokenAmountB] : [tokenAmountB, currencyAmountA];
-    this.liquidityToken = new sdkCore.Token(tokenAmounts[0].currency.chainId, Pair.getAddress(tokenAmounts[0].currency, tokenAmounts[1].currency), 18, 'PLSX', 'PulseX');
+    this.liquidityToken = new sdkCore.Token(tokenAmounts[0].currency.chainId, Pair.getAddress(tokenAmounts[0].currency, tokenAmounts[1].currency), 18, 'Ceto-LP', 'CetoSwap LPs');
     this._swapFractionAfterFee = JSBI.subtract(FEES_DENOMINATOR, swapFee);
     this._protocolFeeShare = protocolFeeShare;
     this.swapFee = swapFee;

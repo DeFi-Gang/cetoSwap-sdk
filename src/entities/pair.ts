@@ -55,8 +55,8 @@ export class Pair {
       tokenAmounts[0].currency.chainId,
       Pair.getAddress(tokenAmounts[0].currency, tokenAmounts[1].currency),
       18,
-      'PLSX',
-      'PulseX'
+      'Ceto-LP',
+      'CetoSwap LPs'
     )
     this._swapFractionAfterFee = JSBI.subtract(FEES_DENOMINATOR, swapFee)
     this._protocolFeeShare = protocolFeeShare
